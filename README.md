@@ -1,7 +1,3 @@
-copy this code 
-
-youtube = https://youtube.com/@nimaCrypto
-
 
 // SPDX-License-Identifier: UNLICENCED
 
