@@ -4,8 +4,8 @@
 pragma solidity ^0.8.7;
 
 contract ERC20Token {
-    string public constant name = "nima Token";
-    string public constant symbol = "NIT";
+    string public constant name = "NimaCrypto";
+    string public constant symbol = "NCT";
     uint8 public constant decimals = 18;  
 
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
@@ -20,12 +20,12 @@ contract ERC20Token {
     using SafeMath for uint256;
 
     constructor(uint256 total) {  
-        totalSupply_ = total;
-        balances[msg.sender] = totalSupply_;
+	    totalSupply_ = total;
+	    balances[msg.sender] = totalSupply_;
     }  
 
     function totalSupply() public view returns (uint256) {
-        return totalSupply_;
+	    return totalSupply_;
     }
     
     function balanceOf(address tokenOwner) public view returns (uint) {
@@ -74,4 +74,3 @@ library SafeMath {
       return c;
     }
 }
- 
