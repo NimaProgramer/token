@@ -20,12 +20,12 @@ contract ERC20Token {
     using SafeMath for uint256;
 
     constructor(uint256 total) {  
-	    totalSupply_ = total;
-	    balances[msg.sender] = totalSupply_;
+        totalSupply_ = total;
+        balances[msg.sender] = totalSupply_;
     }  
 
     function totalSupply() public view returns (uint256) {
-	    return totalSupply_;
+        return totalSupply_;
     }
     
     function balanceOf(address tokenOwner) public view returns (uint) {
